@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ChengduTaxi">
+    <output-path>$PROJECT_DIR$/docker/tomcat</output-path>
+    <root id="archive" name="ChengduTaxi.war">
+      <element id="javaee-facet-resources" facet="ChengduTaxi/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ChengduTaxi" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="file" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.46" />
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+          <element id="library" level="project" name="csv" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

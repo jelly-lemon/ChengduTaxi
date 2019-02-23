@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  tomcat:
+    build: ./tomcat
+    image: taxitomcat:1.0.0
+    container_name: taxitomcatcon
+    restart: always
+    ports:
+      - 0.0.0.0:8080:8080
+    networks:
+      - lmnetwork
+
+      
+  mysql:
+    build: ./mysql
+    image: taximysql:1.0.0
+    container_name: taximysqlcon
+    restart: always
+    ports:
+      - 0.0.0.0:3306:3306
+    networks:
+      lmnetwork: 
+       aliases: 
+         - mysql_service
+
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+
+
+networks:
+  lmnetwork:
+    driver: bridge
+
+
+      
+#      ipam:
+#        driver: default
+#        config:
+#          - subnet: 172.18.0.0/24
+#            gateway: 172.18.0.1
+  
+    
