@@ -2,7 +2,7 @@
 成都出租车数据分析。
 
 效果图：
-![image](https://github.com/jelly-lemon/ChengduTaxi/blob/master/TIM%E6%88%AA%E5%9B%BE20190224115635.png)
+![image](https://github.com/jelly-lemon/ChengduTaxi/blob/master/images/%E4%BD%8D%E7%BD%AE%E6%A0%87%E6%B3%A8.png)
 
 重现该项目：
 1、MySQL 数据库创建 taxi 表；
