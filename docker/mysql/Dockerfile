@@ -14,7 +14,7 @@ RUN		rm	/etc/mysql/conf.d/mysql.cnf
 COPY 	./mysql.cnf		/etc/mysql/conf.d/
 
 #复制初始化 sql 文件
-COPY 	./initdb.sql	/docker-entrypoint-initdb.d/
+#COPY 	./initdb.sql	/docker-entrypoint-initdb.d/
 
 
 

@@ -20,8 +20,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
-    <orderEntry type="library" name="file" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.46" level="project" />
     <orderEntry type="library" name="csv" level="project" />
+    <orderEntry type="library" name="upload" level="project" />
+    <orderEntry type="library" name="json" level="project" />
   </component>
 </module>

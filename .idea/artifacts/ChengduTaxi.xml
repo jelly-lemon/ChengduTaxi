@@ -8,10 +8,11 @@
           <element id="module-output" name="ChengduTaxi" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="file" />
           <element id="library" level="project" name="mysql-connector-java-5.1.46" />
           <element id="library" level="project" name="Java EE 6-Java EE 6" />
           <element id="library" level="project" name="csv" />
+          <element id="library" level="project" name="upload" />
+          <element id="library" level="project" name="json" />
         </element>
       </element>
     </root>

@@ -3,30 +3,28 @@ package utils;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
+
 
 public class DBDAO {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static String DBName = "taxi";
-    static Connection mConnection;
-    static Statement mStatement;
+    static String dataBase = "taxi";
+    static String user = "root";
+    static String password = "mysql";
+
 
 
 
     public static Connection getConnection() {
+        String url = String.format("jdbc:mysql://mysql_service:3306/%s?useSSL=false", dataBase);
         try {
 
-            if (mConnection == null) {
-                // 加载驱动
-                Class.forName(JDBC_DRIVER);
+            // 加载驱动
+            Class.forName(JDBC_DRIVER);
+            // 建立连接
+            Connection con;
+            con = DriverManager.getConnection(url, user, password);
 
-                // 设置 URL
-                String url = String.format("jdbc:mysql://mysql_service:3306/%s?useSSL=false", DBName);
-
-                // 建立连接
-                mConnection = DriverManager.getConnection(url,"root","mysql");
-            }
-            return mConnection;
+            return con;
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
@@ -34,17 +32,4 @@ public class DBDAO {
         return null;
     }
 
-    public static Statement getStatement() {
-        try {
-            if (mConnection == null) {
-                getConnection();
-            }
-            Statement statement = mConnection.createStatement();
-            return statement;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return null;
-    }
 }

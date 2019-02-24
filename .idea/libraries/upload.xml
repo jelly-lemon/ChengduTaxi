@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="upload">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/upload" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/upload" recursive="false" />
+  </library>
+</component>
