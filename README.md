@@ -1,9 +1,9 @@
 # 成都出租车数据分析
 
-前端展示效果图：
-![image](https://github.com/jelly-lemon/ChengduTaxi/blob/master/images/%E4%BD%8D%E7%BD%AE%E6%A0%87%E6%B3%A8.png)
-流程图：
-![image](https://github.com/jelly-lemon/ChengduTaxi/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+前端展示效果图：<br>
+![image](https://github.com/jelly-lemon/ChengduTaxi/blob/master/images/%E4%BD%8D%E7%BD%AE%E6%A0%87%E6%B3%A8.png)<br>
+流程图：<br>
+![image](https://github.com/jelly-lemon/ChengduTaxi/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)<br>
 
 重现该项目做法：
 <br>1、构建该项目，同时根据 docker-compose.yml 构建镜像；部署项目到 Tomcat 容器中；
